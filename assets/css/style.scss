@@ -1,0 +1,103 @@
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+$Blue: hsl(246, 80%, 60%);
+
+$orange: hsl(15, 100%, 70%);
+$Soft-blue: hsl(195, 74%, 62%);
+$Light-red: hsl(348, 100%, 68%);
+$Lime-green: hsl(145, 58%, 55%);
+$Violet: hsl(264, 64%, 52%);
+$Soft-orange: hsl(43, 84%, 65%);
+
+//Neutral
+
+$Very-dark-blue: hsl(226, 43%, 10%);
+$Dark-blue: hsl(235, 46%, 20%);
+$Desaturated-blue: hsl(235, 45%, 61%);
+$Pale-Blue: hsl(236, 100%, 87%);
+
+
+body{
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    background-color: $Very-dark-blue;
+    color: #fff
+}
+.unactive{
+    color: #ffffff99;
+}
+
+.box1{
+    background-color: $Dark-blue;
+    height: 600px;
+    border-radius: 20px;
+    .inside-box{
+        height: 60%;
+        background-color: $Blue;
+        border-radius: 20px;
+        img{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            background-color: #fff;
+        }
+    }
+    .inside-box-bottom{
+        height: 40%;
+    }
+    .unactive{
+        cursor: pointer;
+    }
+}
+
+
+.bg-color1{
+    background-color: $orange;
+}
+.bg-color2{
+    background-color: $Soft-blue;
+}
+.bg-color3{
+    background-color: $Light-red;
+}
+.bg-color4{
+    background-color: $Lime-green;
+}
+.bg-color5{
+    background-color: $Violet;
+}
+.bg-color6{
+    background-color: $Soft-orange;
+}
+
+.box{
+    height: 290px;
+    position: relative;
+    bottom: 30px;
+    margin-bottom: 20px;
+    .top-box{
+        height: calc(20% + 30px);
+        border-radius: 20px;
+        position: relative;
+        top: 30px;
+        z-index: 1;
+    }
+
+    .box-text{
+        height: 80%;
+        background-color: $Dark-blue;
+        border-radius: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    .fw-bold{
+            cursor: pointer;
+            transition-duration: 0.3s;
+            &:hover{
+                transform: scale(1.3);
+            }
+    }
+}
